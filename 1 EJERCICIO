@@ -1,0 +1,40 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Other/File.java to edit this template
+ */
+package ejerciciso.DescuentoComputadora;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author acer
+ */
+public class java {
+    
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Ingrese la cantidad de computadoras: ");
+        int numeroComputadoras = scanner.nextInt();
+
+        double precioComputadora =  500;
+        double totalSinDescuento = numeroComputadoras * precioComputadora;
+        double descuento;
+
+        if (numeroComputadoras <  5) {
+            descuento = totalSinDescuento *  0.10; //  10% de descuento
+        } else if (numeroComputadoras <  10) {
+            descuento = totalSinDescuento *  0.20; //  20% de descuento
+        } else {
+            descuento = totalSinDescuento *  0.40; //  40% de descuento
+        }
+
+        double totalConDescuento = totalSinDescuento - descuento;
+
+        System.out.println("El total con descuento para " + numeroComputadoras + " computadoras es: U$ " + totalConDescuento);
+    }
+
+  
+            }
+        
